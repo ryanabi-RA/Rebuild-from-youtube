@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#444444">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="src/css/style-nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <!-- <div class="container">
+        <div class="loader"></div>
+    </div> -->
+    <section name="" id="1" class="block"></section>
+    <section name="" id="2" class="block"></section>
+    <section name="" id="3" class="block"></section>
+</body>
+</html>
+<script src="src/js/script.js"></script>    
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
